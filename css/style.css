@@ -5,7 +5,6 @@ body {
     background-color: #eee;
     height: auto;
 }
-
 main {
     max-width: 900px;
     margin: auto;
@@ -15,6 +14,24 @@ a {
     color: white;
 }
 
+#landing-text {
+    flex: 0 1 40vw;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.btn {
+    padding: 0.5rem 2rem;
+    border: 1px #ccc solid;
+    display: inline-block;
+    margin: 2rem 0 0;
+    border-radius: 50px;
+    color: #333;
+    transition: background 200ms ease-in;
+}
 .whitelogo{
     filter: invert(100%) sepia(5%) saturate(0%) hue-rotate(96deg) brightness(100%) contrast(101%);
     padding: 25px;
