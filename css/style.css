@@ -34,8 +34,7 @@ main .localisation {
 /*Réserver menu ici */
 .reservermenu {
     text-align: center;
-    background-color: #F6F6F6;
-    margin: 10px;
+    background-color: #F6F6F6;;
 }
 
 .reservermenu h2 {
