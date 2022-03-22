@@ -5,7 +5,7 @@ body {
     background-color: #eee;
     height: auto;
 }
-main {
+body {
     max-width: 900px;
     margin: auto;
 }
@@ -13,7 +13,18 @@ a {
     text-decoration: none;
     color: white;
 }
-
+.navbar {
+    height: 10vh;
+    background-color: white;
+    align-items: center;
+}
+.logonav{
+    height: 10vh;
+}
+img {
+    height: 7vh;
+    padding: 10px;
+}
 #landing-text {
     flex: 0 1 40vw;
     height: 20vh;
