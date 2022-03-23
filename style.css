@@ -86,7 +86,6 @@ footer {
 
 .fonctionnement ol {
   display: flex;
-  flex-wrap: wrap;
   gap: 1rem;
 }
 @media (max-width: 800px) {
