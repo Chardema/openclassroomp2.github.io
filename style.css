@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
-  background-color: #eee;
   height: auto;
   margin: auto;
-}
-
-h1 {
-  margin: 0;
-  padding: 0;
 }
 
 a {
@@ -39,6 +39,7 @@ header {
 
 .reservermenu {
   text-align: center;
+  height: 250px;
   background-color: #F6F6F6;
 }
 .reservermenu h2 {
@@ -54,7 +55,6 @@ header {
   border: none;
   border-radius: 100px;
   margin-top: 1rem;
-  /*box-shadow: 2px 1px 16px -3px #000000;*/
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), #ff79da);
   transition: transform 200ms;
   box-shadow: 2px 1px 16px -3px #000000;
@@ -75,7 +75,6 @@ header {
 .whitelogo {
   filter: invert(100%) sepia(5%) saturate(0%) hue-rotate(96deg) brightness(100%) contrast(101%);
   padding: 10px;
-  height: 1vh;
 }
 
 footer {
@@ -84,6 +83,9 @@ footer {
   margin: auto;
 }
 
+.fonctionnement {
+  counter-reset: steps;
+}
 .fonctionnement ol {
   display: flex;
   gap: 1rem;
@@ -94,15 +96,31 @@ footer {
   }
 }
 .fonctionnement li {
+  position: relative;
+  list-style-type: none;
   background-color: #f6f6f6;
-  padding: 1rem 2rem;
-  border: 1px solid red;
+  padding: 1.5rem 2rem;
   flex-grow: 1;
   border-radius: 1rem;
   box-shadow: 2px 1px 16px -3px #000000;
 }
+.fonctionnement li::before {
+  content: counter(steps);
+  counter-increment: steps;
+  color: white;
+  background-color: purple;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: grid;
+  position: absolute;
+  place-items: center;
+}
 .fonctionnement li:hover {
   transform: scale(1.02);
+}
+.fonctionnement i.fas {
+  margin-right: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
