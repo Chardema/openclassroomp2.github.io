@@ -5,13 +5,17 @@ body {
   margin: 0;
   background-color: #eee;
   height: auto;
-  max-width: 900px;
   margin: auto;
 }
 
 h1 {
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 header {
@@ -21,11 +25,6 @@ header {
   background-color: white;
   box-shadow: 0px 3px rgba(0, 0, 0, 0.25);
   padding: 0.1rem;
-}
-
-a {
-  text-decoration: none;
-  color: white;
 }
 
 .localisation {
@@ -55,9 +54,10 @@ a {
   border: none;
   border-radius: 100px;
   margin-top: 1rem;
-  box-shadow: 2px 1px 16px -3px #000000;
+  /*box-shadow: 2px 1px 16px -3px #000000;*/
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), #ff79da);
   transition: transform 200ms;
+  box-shadow: 2px 1px 16px -3px #000000;
 }
 .reservermenu button:hover {
   transform: scale(1.02);
@@ -82,6 +82,28 @@ footer {
   background-color: #363636;
   padding: 2rem 1rem;
   margin: auto;
+}
+
+.fonctionnement ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+@media (max-width: 800px) {
+  .fonctionnement ol {
+    flex-direction: column;
+  }
+}
+.fonctionnement li {
+  background-color: #f6f6f6;
+  padding: 1rem 2rem;
+  border: 1px solid red;
+  flex-grow: 1;
+  border-radius: 1rem;
+  box-shadow: 2px 1px 16px -3px #000000;
+}
+.fonctionnement li:hover {
+  transform: scale(1.02);
 }
 
 /*# sourceMappingURL=style.css.map */
