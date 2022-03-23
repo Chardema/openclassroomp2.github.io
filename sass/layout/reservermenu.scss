@@ -1,9 +1,10 @@
 @use "../utils/box-shadow.scss";
+@use "../utils/colors.scss";
 
 .reservermenu {
     text-align: center;
     height: 250px;
-    background-color: #F6F6F6;;
+    background-color: colors.$backgroundgrey;
         & h2 {
             margin: 0;
             padding-top: 20px;

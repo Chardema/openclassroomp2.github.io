@@ -11,6 +11,7 @@ body {
   margin: 0;
   height: auto;
   margin: auto;
+  padding: 0 7rem;
 }
 
 a {
@@ -67,11 +68,6 @@ header {
   font-size: 1rem;
 }
 
-.fonctionnement {
-  background-color: #FFFFFF;
-  height: 30vh;
-}
-
 .whitelogo {
   filter: invert(100%) sepia(5%) saturate(0%) hue-rotate(96deg) brightness(100%) contrast(101%);
   padding: 10px;
@@ -84,6 +80,7 @@ footer {
 }
 
 .fonctionnement {
+  padding: 1rem;
   counter-reset: steps;
 }
 .fonctionnement ol {
@@ -117,6 +114,8 @@ footer {
   left: -1rem;
   position: absolute;
   place-items: center;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .fonctionnement li:hover {
   transform: scale(1.02);
@@ -125,6 +124,22 @@ footer {
   margin-right: 1rem;
   color: #7e7e7e;
   font-size: 1.5rem;
+}
+
+.menus {
+  background-color: #F6F6F6;
+  padding: 1rem;
+}
+.menus .menu_cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.menus .card {
+  border: 1px solid black;
+  height: 4rem;
+  flex-grow: 1;
+  min-width: 15rem;
 }
 
 /*# sourceMappingURL=style.css.map */

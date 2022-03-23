@@ -4,6 +4,7 @@
 @use "../utils/colors.scss";
 
 .fonctionnement {
+    padding: 1rem;
     counter-reset: steps;
     & ol {
         display: flex;
@@ -27,6 +28,8 @@
             left: -1 * variables.$number-height;
             position: absolute;
             place-items: center;
+            top: 50%;
+            transform: translateY(-50%);
         }
         list-style-type: none;
         background-color: #f6f6f6;

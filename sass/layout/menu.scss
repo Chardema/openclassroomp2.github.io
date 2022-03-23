@@ -1,0 +1,16 @@
+@use "../utils/colors.scss";
+.menus {
+    background-color: colors.$backgroundgrey ;
+    padding: 1rem;
+    .menu_cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    .card {
+        border: 1px solid black;
+        height: 4rem;
+        flex-grow: 1;
+        min-width: 15rem;
+    }
+}
