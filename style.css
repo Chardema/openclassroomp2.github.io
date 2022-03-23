@@ -88,9 +88,9 @@ footer {
 }
 .fonctionnement ol {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .fonctionnement ol {
     flex-direction: column;
   }
@@ -108,11 +108,13 @@ footer {
   content: counter(steps);
   counter-increment: steps;
   color: white;
-  background-color: purple;
+  background-color: #9356dc;
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
   display: grid;
+  bottom: 1rem;
+  left: -1rem;
   position: absolute;
   place-items: center;
 }
@@ -121,6 +123,8 @@ footer {
 }
 .fonctionnement i.fas {
   margin-right: 1rem;
+  color: #7e7e7e;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

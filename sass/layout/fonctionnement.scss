@@ -1,12 +1,14 @@
 @use "../utils/zoom.scss";
 @use "../utils/box-shadow.scss";
+@use "../utils/variables.scss";
+@use "../utils/colors.scss";
 
 .fonctionnement {
     counter-reset: steps;
     & ol {
         display: flex;
-        gap: 1rem;
-        @media (max-width: 800px) {
+        gap: 2rem;
+        @media (max-width: 1000px) {
             flex-direction: column;
         }
     }
@@ -16,11 +18,13 @@
             content: counter(steps);
             counter-increment: steps;
             color: white;
-            background-color: purple;
-            width: 2rem;
-            height: 2rem;
+            background-color: colors.$purple;
+            width: 2 * variables.$number-height;
+            height: 2 * variables.$number-height;
             border-radius: 50%;
             display: grid;
+            bottom: variables.$number-height;
+            left: -1 * variables.$number-height;
             position: absolute;
             place-items: center;
         }
@@ -36,5 +40,7 @@
     }
      & i.fas {
         margin-right: 1rem;
+        color: colors.$lightgrey;
+        font-size: 1.5rem;
     }
 }
