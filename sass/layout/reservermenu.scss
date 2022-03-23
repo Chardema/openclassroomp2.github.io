@@ -1,4 +1,4 @@
-@import"../utils/box-shadow.scss";
+@use "../utils/box-shadow.scss";
 
 .reservermenu {
     text-align: center;
@@ -19,7 +19,7 @@
             /*box-shadow: 2px 1px 16px -3px #000000;*/
             background-image: linear-gradient(to top, rgba(147,86,220,0.9), rgba(255,121,218,09));
             transition: transform 200ms;
-            @include base-shadow;
+            @include box-shadow.base-shadow;
         }
         & button:hover {
             transform: scale(1.02);
