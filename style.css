@@ -15,7 +15,11 @@ body {
 
 a {
   text-decoration: none;
-  color: white;
+  color: inherit;
+}
+
+h3, p {
+  margin: 0;
 }
 
 h2 {
@@ -81,6 +85,10 @@ footer {
   background-color: #363636;
   padding: 2rem 1rem;
   margin: auto;
+}
+
+footer a {
+  color: white;
 }
 
 .fonctionnement {
@@ -161,7 +169,7 @@ footer {
 }
 .menus .card__image {
   height: 15rem;
-  border-radius: 1rem;
+  border-radius: 1rem 1rem 0 0;
   background-size: cover;
 }
 .menus .card__image-1 {
@@ -175,6 +183,22 @@ footer {
 }
 .menus .card__image-4 {
   background-image: url(../../assets/restaurants/food4.jpg);
+}
+.menus .card__description {
+  position: relative;
+}
+.menus .card__description h3, .menus .card__description p {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+.menus .card__description h3 {
+  padding-top: 0.5rem;
+}
+.menus .card__description i {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /*# sourceMappingURL=style.css.map */

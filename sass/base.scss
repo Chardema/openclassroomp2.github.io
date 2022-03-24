@@ -15,8 +15,12 @@ body {
 
 a {
     text-decoration: none;
-    color: white;
+    color: inherit;
 }
+h3, p{
+    margin: 0;
+}
+
 
 h2 {
     padding: 2rem 0;
