@@ -18,9 +18,6 @@ a {
   color: inherit;
 }
 
-main {
-  padding: 0 7rem;
-}
 @media (max-width: 1000px) {
   main {
     padding: 0;
@@ -73,9 +70,9 @@ header {
   border: none;
   border-radius: 100px;
   margin-top: 1rem;
-  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), #ff79da);
   transition: transform 200ms;
   box-shadow: 2px 1px 16px -3px #000000;
+  background-image: linear-gradient(to top, #9356dc, #ff79da);
 }
 .reservermenu button:hover {
   transform: scale(1.02);
@@ -108,6 +105,7 @@ footer a {
 
 .fonctionnement {
   padding: 1rem;
+  background-color: white;
   counter-reset: steps;
 }
 .fonctionnement ol {
@@ -216,6 +214,17 @@ footer a {
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
+}
+.menus .card__description .fa-solid {
+  opacity: 0;
+  color: transparent;
+  -webkit-background-clip: text;
+  transition: all 200ms ease-in-out;
+  background-image: linear-gradient(to top, #9356dc, #ff79da);
+}
+.menus .card__description:hover .fa-solid {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.2);
 }
 
 /*# sourceMappingURL=style.css.map */

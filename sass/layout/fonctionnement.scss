@@ -5,6 +5,7 @@
 
 .fonctionnement {
     padding: 1rem;
+    background-color: white;
     counter-reset: steps;
     & ol {
         display: flex;

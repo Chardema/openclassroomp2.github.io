@@ -1,6 +1,7 @@
 @use "../utils/colors.scss";
 @use "../utils/variables.scss";
 @use "../utils/box-shadow.scss";
+@use "../utils/linear-gradient.scss";
 .menus {
     background-color: colors.$backgroundgrey ;
     padding: 1rem;
@@ -43,10 +44,10 @@
             position: relative;
             border-radius: 0 0 1rem 1rem;
             background-color: white;
-            h3,p {
-            font-size: 1.5rem;
-            padding: .5rem;
-            }
+                h3,p {
+                    font-size: 1.5rem;
+                    padding: .5rem;
+                }
             h3{
                 padding-top: 1rem;
             }
@@ -55,6 +56,17 @@
                 right : 1rem;
                 top: 50%;
                 transform: translateY(-50%);
+            }
+            .fa-solid {
+                opacity: 0;
+                color: transparent;
+                -webkit-background-clip: text;
+                transition: all 200ms ease-in-out;
+                @include linear-gradient.gradientpurple(1);
+            }
+            &:hover .fa-solid {
+                opacity: 1;
+                transform: translateY(-50%) scale(1.2);
             }
         }
     }

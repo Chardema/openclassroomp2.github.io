@@ -1,5 +1,6 @@
 @use "../utils/box-shadow.scss";
 @use "../utils/colors.scss";
+@use "../utils/linear-gradient.scss";
 
 .reservermenu {
     text-align: center;
@@ -18,9 +19,9 @@
             border: none;
             border-radius: 100px;
             margin-top: 1rem;
-            background-image: linear-gradient(to top, rgba(147,86,220,0.9), rgba(255,121,218,09));
             transition: transform 200ms;
             @include box-shadow.base-shadow;
+            @include linear-gradient.gradientpurple(1);
         }
         & button:hover {
             transform: scale(1.02);
