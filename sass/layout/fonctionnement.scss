@@ -1,5 +1,4 @@
-@use "../utils/zoom.scss";
-@use "../utils/box-shadow.scss";
+@use "../utils/mixins.scss";
 @use "../utils/variables.scss";
 @use "../utils/colors.scss";
 
@@ -37,9 +36,9 @@
         padding: 1.5rem 2rem;
         flex-grow: 1;
         border-radius: 1rem;
-        @include box-shadow.base-shadow;
+        @include mixins.base-shadow;
         &:hover {
-            @include zoom.zoom;
+            @include mixins.zoom;
         }
     }
      & i.fas {

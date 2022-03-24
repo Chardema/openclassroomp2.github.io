@@ -1,7 +1,6 @@
 @use "../utils/colors.scss";
 @use "../utils/variables.scss";
-@use "../utils/box-shadow.scss";
-@use "../utils/linear-gradient.scss";
+@use "../utils/mixins.scss";
 .menus {
     background-color: colors.$backgroundgrey ;
     padding: 1rem;
@@ -48,6 +47,16 @@
                     font-size: 1.5rem;
                     padding: .5rem;
                 }
+            &::before {
+                display: inline-block;
+                font-style: normal;
+                font-variant: normal;
+                text-rendering: auto;
+                -webkit-font-smoothing:antialiased;
+                font-family: "Font Awesome 6 free";
+                font-weight: 900;
+                content: "\f004";
+            }
             h3{
                 padding-top: 1rem;
             }
@@ -62,7 +71,7 @@
                 color: transparent;
                 -webkit-background-clip: text;
                 transition: all 200ms ease-in-out;
-                @include linear-gradient.gradientpurple(1);
+                @include mixins.gradientpurple(1);
             }
             &:hover .fa-solid {
                 opacity: 1;

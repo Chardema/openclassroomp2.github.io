@@ -1,6 +1,5 @@
-@use "../utils/box-shadow.scss";
 @use "../utils/colors.scss";
-@use "../utils/linear-gradient.scss";
+@use "../utils/mixins.scss";
 
 .reservermenu {
     text-align: center;
@@ -20,8 +19,8 @@
             border-radius: 100px;
             margin-top: 1rem;
             transition: transform 200ms;
-            @include box-shadow.base-shadow;
-            @include linear-gradient.gradientpurple(1);
+            @include mixins.base-shadow;
+            @include mixins.gradientpurple(1);
         }
         & button:hover {
             transform: scale(1.02);
