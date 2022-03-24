@@ -1,11 +1,18 @@
+@use "../utils/colors.scss";
 .whitelogo{
     filter: invert(100%) sepia(5%) saturate(0%) hue-rotate(96deg) brightness(100%) contrast(101%);
     padding: 10px;
 }
 footer{
-    background-color: #363636;
-    padding: 2rem 1rem;
-    margin: auto;
+    background-color: colors.$footercolor;
+    padding: 1rem 2rem;
+    .fa-solid {
+        padding-right: .2rem;
+    }
+    p {
+        padding: .3rem;
+        font-size: 1.2rem;
+    }
 }
 
 footer a {

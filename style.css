@@ -18,6 +18,15 @@ a {
   color: inherit;
 }
 
+main {
+  padding: 0 7rem;
+}
+@media (max-width: 1000px) {
+  main {
+    padding: 0;
+  }
+}
+
 h3, p {
   margin: 0;
 }
@@ -83,8 +92,14 @@ header {
 
 footer {
   background-color: #363636;
-  padding: 2rem 1rem;
-  margin: auto;
+  padding: 1rem 2rem;
+}
+footer .fa-solid {
+  padding-right: 0.2rem;
+}
+footer p {
+  padding: 0.3rem;
+  font-size: 1.2rem;
 }
 
 footer a {
@@ -186,13 +201,15 @@ footer a {
 }
 .menus .card__description {
   position: relative;
+  border-radius: 0 0 1rem 1rem;
+  background-color: white;
 }
 .menus .card__description h3, .menus .card__description p {
   font-size: 1.5rem;
-  margin: 0.5rem;
+  padding: 0.5rem;
 }
 .menus .card__description h3 {
-  padding-top: 0.5rem;
+  padding-top: 1rem;
 }
 .menus .card__description i {
   position: absolute;
