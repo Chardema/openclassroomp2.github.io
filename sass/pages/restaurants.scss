@@ -1,3 +1,19 @@
-img {
-    max-width: 100%;
+@use "../utils/mixins.scss";
+.miamimage {
+        width: 100%;
+        max-height: 50vh;
+        display: block;
+        object-fit: cover;
+        object-position: bottom;
 }
+.resto__main {
+    margin-top: -2rem;
+    h2{
+    padding: 2rem 1rem;
+    font-size: 2rem;
+    font-family: "Shrikhand", "cursive";
+    @include mixins.animatedheart;
+    border-radius: 2rem 2rem 0 0;
+    }
+}
+

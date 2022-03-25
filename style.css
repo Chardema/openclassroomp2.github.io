@@ -202,10 +202,6 @@ footer a {
   border-radius: 0 0 1rem 1rem;
   background-color: white;
 }
-.menus .card__description h3, .menus .card__description p {
-  font-size: 1.5rem;
-  padding: 0.5rem;
-}
 .menus .card__description::before {
   display: inline-block;
   font-style: normal;
@@ -254,13 +250,75 @@ footer a {
 .menus .card__description h3 {
   padding-top: 1rem;
 }
-.menus .card__description:hover .fa-solid {
-  opacity: 1;
-  transform: translateY(-50%) scale(1.2);
+.menus .card__description h3, .menus .card__description p {
+  font-size: 1.5rem;
+  padding: 0.5rem;
 }
 
-img {
-  max-width: 100%;
+.miamimage {
+  width: 100%;
+  max-height: 50vh;
+  display: block;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.resto__main {
+  margin-top: -2rem;
+}
+.resto__main h2 {
+  padding: 2rem 1rem;
+  font-size: 2rem;
+  font-family: "Shrikhand", "cursive";
+  position: relative;
+  border-radius: 0 0 1rem 1rem;
+  background-color: white;
+  border-radius: 2rem 2rem 0 0;
+}
+.resto__main h2::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 6 free";
+  font-weight: 400;
+  content: "\f004";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: inherit;
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 1;
+  transition: all 200ms ease-in-out;
+}
+.resto__main h2::after {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 6 free";
+  font-weight: 900;
+  content: "\f004";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+  background-image: linear-gradient(to top, #9356dc, #ff79da);
+}
+.resto__main h2:hover::after {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.1);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -40,30 +40,13 @@
             }
         }
         &__description{
-            position: relative;
-            border-radius: 0 0 1rem 1rem;
-            background-color: white;
-                h3,p {
-                    font-size: 1.5rem;
-                    padding: .5rem;
-                }
-            &::before {
-                @include mixins.heart;
-            }
-            &::after {
-                @include mixins.heart(0, 900, transparent);
-                @include mixins.gradientpurple(1);
-            }
-            &:hover::after {
-                opacity: 1;
-                transform: translateY(-50%) scale(1.1);
-            }
+            @include mixins.animatedheart;
             h3{
                 padding-top: 1rem;
             }
-            &:hover .fa-solid {
-                opacity: 1;
-                transform: translateY(-50%) scale(1.2);
+            h3,p {
+                font-size: 1.5rem;
+                padding: .5rem;
             }
         }
     }

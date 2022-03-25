@@ -28,3 +28,19 @@
     transition: all 200ms ease-in-out;
 
 }
+@mixin animatedheart {
+    position: relative;
+    border-radius: 0 0 1rem 1rem;
+    background-color: white;
+    &::before {
+        @include heart;
+    }
+    &::after {
+        @include heart(0, 900, transparent);
+        @include gradientpurple(1);
+    }
+    &:hover::after {
+        opacity: 1;
+        transform: translateY(-50%) scale(1.1);
+    }
+}
