@@ -186,16 +186,16 @@ footer a {
   background-size: cover;
 }
 #homepage .menus .card__image-1 {
-  background-image: url(../../assets/restaurants/food1.jpg);
+  background-image: url(./../../assets/restaurants/food1.jpg);
 }
 #homepage .menus .card__image-2 {
-  background-image: url(../../assets/restaurants/food2.jpg);
+  background-image: url(./../../assets/restaurants/food2.jpg);
 }
 #homepage .menus .card__image-3 {
-  background-image: url(../../assets/restaurants/food3.jpg);
+  background-image: url(./../../assets/restaurants/food3.jpg);
 }
 #homepage .menus .card__image-4 {
-  background-image: url(../../assets/restaurants/food4.jpg);
+  background-image: url(./../../assets/restaurants/food4.jpg);
 }
 #homepage .menus .card__description {
   position: relative;
