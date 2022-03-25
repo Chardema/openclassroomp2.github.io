@@ -1,19 +1,48 @@
 @use "../utils/mixins.scss";
-.miamimage {
-        width: 100%;
-        max-height: 50vh;
-        display: block;
-        object-fit: cover;
-        object-position: bottom;
-}
-.resto__main {
-    margin-top: -2rem;
-    h2{
-    padding: 2rem 1rem;
-    font-size: 2rem;
-    font-family: "Shrikhand", "cursive";
-    @include mixins.animatedheart;
-    border-radius: 2rem 2rem 0 0;
-    }
-}
+@use "../utils/variables.scss";
+@use "../utils/colors.scss";
 
+#restaurantpage {
+    background-color: colors.$backgroundgrey;
+
+        .miamimage {
+            width: 100%;
+            max-height: 50vh;
+            display: block;
+            object-fit: cover;
+            object-position: bottom;
+        }
+        .resto__title {
+            margin-top: -2rem;
+            h2{
+            padding: 2rem 1rem;
+            font-size: 2rem;
+            font-family: "Shrikhand", "cursive";
+            @include mixins.animatedheart;
+            border-radius: 2rem 2rem 0 0;
+            background-color: colors.$backgroundgrey;
+
+            }
+        }
+        .resto-main {
+            padding: 0 2rem;
+            @media (max-width:variables.$breakpoint) {
+                padding: 0;
+                grid-template-columns: 1fr;   
+            }
+        }
+        .menu{
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(3, 1fr);
+            @media (max-width:variables.$breakpoint) {
+                grid-template-columns: 1fr;   
+            }
+            & > * {
+                border: 1px solid red;
+            }
+        }
+        .menu__category {
+            background-color: white;
+        }
+}

@@ -151,24 +151,24 @@ footer a {
   font-size: 1.5rem;
 }
 
-.menus {
+#homepage .menus {
   background-color: #F6F6F6;
   padding: 1rem;
 }
-.menus .menu__cards {
+#homepage .menus .menu__cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 @media (max-width: 1000px) {
-  .menus .menu__cards {
+  #homepage .menus .menu__cards {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-.menus .menu__cards .new {
+#homepage .menus .menu__cards .new {
   position: relative;
 }
-.menus .menu__cards .new::before {
+#homepage .menus .menu__cards .new::before {
   content: "Nouveau";
   position: absolute;
   height: 2rem;
@@ -180,29 +180,29 @@ footer a {
   display: grid;
   place-items: center;
 }
-.menus .card__image {
+#homepage .menus .card__image {
   height: 15rem;
   border-radius: 1rem 1rem 0 0;
   background-size: cover;
 }
-.menus .card__image-1 {
+#homepage .menus .card__image-1 {
   background-image: url(../../assets/restaurants/food1.jpg);
 }
-.menus .card__image-2 {
+#homepage .menus .card__image-2 {
   background-image: url(../../assets/restaurants/food2.jpg);
 }
-.menus .card__image-3 {
+#homepage .menus .card__image-3 {
   background-image: url(../../assets/restaurants/food3.jpg);
 }
-.menus .card__image-4 {
+#homepage .menus .card__image-4 {
   background-image: url(../../assets/restaurants/food4.jpg);
 }
-.menus .card__description {
+#homepage .menus .card__description {
   position: relative;
   border-radius: 0 0 1rem 1rem;
   background-color: white;
 }
-.menus .card__description::before {
+#homepage .menus .card__description::before {
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -222,7 +222,7 @@ footer a {
   opacity: 1;
   transition: all 200ms ease-in-out;
 }
-.menus .card__description::after {
+#homepage .menus .card__description::after {
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -243,30 +243,32 @@ footer a {
   transition: all 200ms ease-in-out;
   background-image: linear-gradient(to top, #9356dc, #ff79da);
 }
-.menus .card__description:hover::after {
+#homepage .menus .card__description:hover::after {
   opacity: 1;
   transform: translateY(-50%) scale(1.1);
 }
-.menus .card__description h3 {
+#homepage .menus .card__description h3 {
   padding-top: 1rem;
 }
-.menus .card__description h3, .menus .card__description p {
+#homepage .menus .card__description h3, #homepage .menus .card__description p {
   font-size: 1.5rem;
   padding: 0.5rem;
 }
 
-.miamimage {
+#restaurantpage {
+  background-color: #F6F6F6;
+}
+#restaurantpage .miamimage {
   width: 100%;
   max-height: 50vh;
   display: block;
   object-fit: cover;
   object-position: bottom;
 }
-
-.resto__main {
+#restaurantpage .resto__title {
   margin-top: -2rem;
 }
-.resto__main h2 {
+#restaurantpage .resto__title h2 {
   padding: 2rem 1rem;
   font-size: 2rem;
   font-family: "Shrikhand", "cursive";
@@ -274,8 +276,9 @@ footer a {
   border-radius: 0 0 1rem 1rem;
   background-color: white;
   border-radius: 2rem 2rem 0 0;
+  background-color: #F6F6F6;
 }
-.resto__main h2::before {
+#restaurantpage .resto__title h2::before {
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -295,7 +298,7 @@ footer a {
   opacity: 1;
   transition: all 200ms ease-in-out;
 }
-.resto__main h2::after {
+#restaurantpage .resto__title h2::after {
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -316,9 +319,34 @@ footer a {
   transition: all 200ms ease-in-out;
   background-image: linear-gradient(to top, #9356dc, #ff79da);
 }
-.resto__main h2:hover::after {
+#restaurantpage .resto__title h2:hover::after {
   opacity: 1;
   transform: translateY(-50%) scale(1.1);
+}
+#restaurantpage .resto-main {
+  padding: 0 2rem;
+}
+@media (max-width: 1000px) {
+  #restaurantpage .resto-main {
+    padding: 0;
+    grid-template-columns: 1fr;
+  }
+}
+#restaurantpage .menu {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 1000px) {
+  #restaurantpage .menu {
+    grid-template-columns: 1fr;
+  }
+}
+#restaurantpage .menu > * {
+  border: 1px solid red;
+}
+#restaurantpage .menu__category {
+  background-color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

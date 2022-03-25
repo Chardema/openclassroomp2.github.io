@@ -1,6 +1,7 @@
 @use "../utils/colors.scss";
 @use "../utils/variables.scss";
 @use "../utils/mixins.scss";
+#homepage{
 .menus {
     background-color: colors.$backgroundgrey ;
     padding: 1rem;
@@ -50,4 +51,5 @@
             }
         }
     }
+}
 }
