@@ -24,13 +24,9 @@ a {
   }
 }
 
-h3, p {
+h1, h2, h3, h4, h5, p {
   margin: 0;
-}
-
-h2 {
-  padding: 2rem 0;
-  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -54,7 +50,6 @@ header {
 
 .reservermenu {
   text-align: center;
-  height: 300px;
   background-color: #F6F6F6;
 }
 .reservermenu h2 {
@@ -67,6 +62,7 @@ header {
   font-weight: 300;
   font-size: 1.5rem;
   padding: 1rem 2rem;
+  margin-bottom: 1rem;
   border: none;
   border-radius: 100px;
   margin-top: 1rem;
@@ -270,7 +266,7 @@ footer a {
 }
 #restaurantpage .resto__title h2 {
   padding: 2rem 1rem;
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: "Shrikhand", "cursive";
   position: relative;
   border-radius: 0 0 1rem 1rem;
@@ -326,27 +322,100 @@ footer a {
 #restaurantpage .resto-main {
   padding: 0 2rem;
 }
-@media (max-width: 1000px) {
-  #restaurantpage .resto-main {
-    padding: 0;
-    grid-template-columns: 1fr;
-  }
+#restaurantpage .resto-main h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding-top: 2rem;
+  font-weight: 300;
 }
-#restaurantpage .menu {
+#restaurantpage .resto-main h4, #restaurantpage .resto-main p, #restaurantpage .resto-main span {
+  font-size: 1.5rem;
+}
+#restaurantpage .menus .menu__category {
   display: grid;
-  gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  overflow: hidden;
 }
 @media (max-width: 1000px) {
-  #restaurantpage .menu {
+  #restaurantpage .menus .menu__category {
     grid-template-columns: 1fr;
   }
 }
-#restaurantpage .menu > * {
-  border: 1px solid red;
-}
-#restaurantpage .menu__category {
+#restaurantpage .menus .menu__category .menu-item {
   background-color: white;
+  display: flex;
+  box-shadow: 2px 1px 16px -3px #000000;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 1rem;
+}
+#restaurantpage .menus .menu__category .menu-item .menu-item__price {
+  margin-left: auto;
+  font-weight: bold;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-end;
+}
+#restaurantpage .menus .menu__category .menu-item .menu-item__description {
+  padding: 1rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#restaurantpage .menus .menu__category .menu-item .menu-item__description h4, #restaurantpage .menus .menu__category .menu-item .menu-item__description p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#restaurantpage .menus .menu__category .menu-item .menu-item__check {
+  background-color: #99E2D0;
+  margin-right: -4rem;
+  width: 4rem;
+  transition: margin-right 0.5s;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+#restaurantpage .menus .menu__category .menu-item .menu-item__check i {
+  display: grid;
+  place-items: center;
+  background-color: white;
+  aspect-ratio: 1;
+  width: 2rem;
+  border-radius: 1rem;
+  color: #99E2D0;
+}
+#restaurantpage .menus .menu__category .menu-item:hover .menu-item__check {
+  margin-right: 0;
+}
+#restaurantpage .menus .menu__category .menu-item:hover i {
+  animation: quarterspin 0.7s ease-in-out;
+}
+@keyframes quarterspin {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+#restaurantpage .commandbutton {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+#restaurantpage .commandbutton button {
+  width: 20rem;
+  color: white;
+  font-weight: 300;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 100px;
+  margin-top: 1rem;
+  transition: transform 200ms;
+  box-shadow: 2px 1px 16px -3px #000000;
+  background-image: linear-gradient(to top, #9356dc, #ff79da);
 }
 
 /*# sourceMappingURL=style.css.map */

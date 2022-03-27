@@ -3,7 +3,6 @@
 
 .reservermenu {
     text-align: center;
-    height: 300px;
     background-color: colors.$backgroundgrey;
         & h2 {
             margin: 0;
@@ -15,6 +14,7 @@
             font-weight: 300;
             font-size: 1.5rem;
             padding: 1rem 2rem;
+            margin-bottom: 1rem;
             border: none;
             border-radius: 100px;
             margin-top: 1rem;
