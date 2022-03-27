@@ -17,7 +17,7 @@
             margin-top: -2rem;
             h2{
             padding: 2rem 1rem;
-            font-size: 3rem;
+            font-size: 2rem;
             font-family: "Shrikhand", "cursive";
             @include mixins.animatedheart;
             border-radius: 2rem 2rem 0 0;
@@ -31,6 +31,12 @@
                 text-transform: uppercase;
                 padding-top: 2rem;
                 font-weight: 300;
+            }
+            h3:after {
+                content: "";
+                display: block;
+                width: 95px;
+                border-bottom: 2px solid colors.$newpanel;
             }
             h4, p, span{
                 font-size: 1.5rem;

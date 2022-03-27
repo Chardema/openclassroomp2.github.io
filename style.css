@@ -269,7 +269,7 @@ footer a {
 }
 #restaurantpage .resto__title h2 {
   padding: 2rem 1rem;
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: "Shrikhand", "cursive";
   position: relative;
   border-radius: 0 0 1rem 1rem;
@@ -332,6 +332,12 @@ footer a {
   text-transform: uppercase;
   padding-top: 2rem;
   font-weight: 300;
+}
+#restaurantpage .resto-main h3:after {
+  content: "";
+  display: block;
+  width: 95px;
+  border-bottom: 2px solid #99E2D0;
 }
 #restaurantpage .resto-main h4, #restaurantpage .resto-main p, #restaurantpage .resto-main span {
   font-size: 1.5rem;
