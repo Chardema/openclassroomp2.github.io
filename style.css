@@ -58,6 +58,7 @@ header {
   font-size: 2rem;
 }
 .reservermenu button {
+  cursor: pointer;
   color: white;
   font-weight: 300;
   font-size: 1.5rem;
@@ -217,6 +218,7 @@ footer a {
   -webkit-background-clip: text;
   opacity: 1;
   transition: all 200ms ease-in-out;
+  cursor: pointer;
 }
 #homepage .menus .card__description::after {
   display: inline-block;
@@ -237,6 +239,7 @@ footer a {
   -webkit-background-clip: text;
   opacity: 0;
   transition: all 200ms ease-in-out;
+  cursor: pointer;
   background-image: linear-gradient(to top, #9356dc, #ff79da);
 }
 #homepage .menus .card__description:hover::after {
@@ -293,6 +296,7 @@ footer a {
   -webkit-background-clip: text;
   opacity: 1;
   transition: all 200ms ease-in-out;
+  cursor: pointer;
 }
 #restaurantpage .resto__title h2::after {
   display: inline-block;
@@ -313,6 +317,7 @@ footer a {
   -webkit-background-clip: text;
   opacity: 0;
   transition: all 200ms ease-in-out;
+  cursor: pointer;
   background-image: linear-gradient(to top, #9356dc, #ff79da);
 }
 #restaurantpage .resto__title h2:hover::after {
@@ -332,6 +337,7 @@ footer a {
   font-size: 1.5rem;
 }
 #restaurantpage .menus .menu__category {
+  cursor: pointer;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
@@ -404,6 +410,7 @@ footer a {
   padding: 2rem 1rem;
 }
 #restaurantpage .commandbutton button {
+  cursor: pointer;
   width: 20rem;
   color: white;
   font-weight: 300;
@@ -416,6 +423,10 @@ footer a {
   transition: transform 200ms;
   box-shadow: 2px 1px 16px -3px #000000;
   background-image: linear-gradient(to top, #9356dc, #ff79da);
+}
+#restaurantpage .commandbutton button:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
 }
 
 /*# sourceMappingURL=style.css.map */

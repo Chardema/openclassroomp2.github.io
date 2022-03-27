@@ -26,6 +26,7 @@
     -webkit-background-clip: text;
     opacity: $opacity;
     transition: all 200ms ease-in-out;
+    cursor: pointer;
 
 }
 @mixin animatedheart {

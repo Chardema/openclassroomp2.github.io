@@ -38,6 +38,7 @@
         }
         .menus{            
             .menu__category {
+                cursor: pointer;
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 gap: 1rem;
@@ -104,6 +105,7 @@
             text-align: center;
             padding: 2rem 1rem;
             & button {
+                cursor: pointer;
                 width: 20rem;
                 color: white;
                 font-weight: 300;
@@ -116,7 +118,11 @@
                 transition: transform 200ms;
                 @include mixins.base-shadow;
                 @include mixins.gradientpurple(1);
-        }
+            }                
+            & button:hover {
+                    transform: scale(1.02);
+                    opacity: 0.9;
+                }
     }
 
 }
