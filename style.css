@@ -255,11 +255,19 @@ footer a {
   padding: 0.5rem;
 }
 
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 #restaurantpage {
   background-color: #F6F6F6;
 }
-#restaurantpage header {
-  transition: all 0.5s ease-in-out;
+#restaurantpage header::before {
+  transition: transform 0.5s;
 }
 #restaurantpage header:hover::before {
   transform: scale(1.02) translateY(-50%);
@@ -365,12 +373,14 @@ footer a {
 #restaurantpage .resto-main h4, #restaurantpage .resto-main p, #restaurantpage .resto-main span {
   font-size: 1.5rem;
 }
+#restaurantpage .menus {
+  overflow: hidden;
+}
 #restaurantpage .menus .menu__category {
   cursor: pointer;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  overflow: hidden;
 }
 @media (max-width: 1000px) {
   #restaurantpage .menus .menu__category {
@@ -384,6 +394,7 @@ footer a {
   border-radius: 1rem;
   overflow: hidden;
   margin: 1rem;
+  animation: appear 3s;
 }
 #restaurantpage .menus .menu__category .menu-item .menu-item__price {
   margin-left: auto;

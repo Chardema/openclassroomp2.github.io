@@ -4,8 +4,10 @@
 @use "../utils/animation.scss";
 
 #restaurantpage {
-    header {
-        transition: all 0.5s ease-in-out;        
+    header {  
+        &::before {
+            transition: transform .5s;     
+        } 
         &:hover::before {
             @include mixins.zoom($zoom-level : 1.2 ,$transformation : translateY(-50%));
         }
@@ -58,7 +60,8 @@
                 font-size: 1.5rem;
             }
         }
-        .menus{            
+        .menus{ 
+            overflow: hidden;           
             .menu__category {
                 cursor: pointer;
                 display: grid;
@@ -67,7 +70,6 @@
                 @media (max-width:variables.$breakpoint) {
                     grid-template-columns: 1fr;   
                 }
-                overflow: hidden;
                 .menu-item {
                     background-color: white;
                     display: flex;
@@ -75,6 +77,7 @@
                     border-radius: 1rem;
                     overflow: hidden;
                     margin: 1rem;
+                    animation: appear 3s;
                     .menu-item__price{
                         margin-left: auto;
                         font-weight: bold;
