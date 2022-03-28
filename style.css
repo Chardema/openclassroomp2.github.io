@@ -31,11 +31,12 @@ h1, h2, h3, h4, h5, p {
 
 header {
   font-family: "Shrikhand", cursive;
-  position: relative;
   text-align: center;
   background-color: white;
   box-shadow: 0px 3px rgba(0, 0, 0, 0.25);
-  padding: 0.1rem;
+  padding: 0.3rem;
+  margin: 0;
+  position: relative;
 }
 
 .localisation {
@@ -140,7 +141,7 @@ footer a {
   transform: translateY(-50%);
 }
 .fonctionnement li:hover {
-  transform: scale(1.02);
+  transform: scale(1.02) none;
 }
 .fonctionnement i.fas {
   margin-right: 1rem;
@@ -207,9 +208,9 @@ footer a {
   -webkit-font-smoothing: antialiased;
   font-family: "Font Awesome 6 free";
   font-weight: 400;
+  position: absolute;
   content: "\f004";
   font-size: 2rem;
-  position: absolute;
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
@@ -228,9 +229,9 @@ footer a {
   -webkit-font-smoothing: antialiased;
   font-family: "Font Awesome 6 free";
   font-weight: 900;
+  position: absolute;
   content: "\f004";
   font-size: 2rem;
-  position: absolute;
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
@@ -256,6 +257,28 @@ footer a {
 
 #restaurantpage {
   background-color: #F6F6F6;
+}
+#restaurantpage header {
+  transition: all 0.5s ease-in-out;
+}
+#restaurantpage header:hover::before {
+  transform: scale(1.02) translateY(-50%);
+}
+#restaurantpage header::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 6 free";
+  font-weight: 900;
+  position: absolute;
+  content: "\f060";
+  display: flex;
+  top: 50%;
+  font-size: 30px;
+  margin-left: 20px;
+  transform: translateY(-50%);
 }
 #restaurantpage .miamimage {
   width: 100%;
@@ -285,9 +308,9 @@ footer a {
   -webkit-font-smoothing: antialiased;
   font-family: "Font Awesome 6 free";
   font-weight: 400;
+  position: absolute;
   content: "\f004";
   font-size: 2rem;
-  position: absolute;
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
@@ -306,9 +329,9 @@ footer a {
   -webkit-font-smoothing: antialiased;
   font-family: "Font Awesome 6 free";
   font-weight: 900;
+  position: absolute;
   content: "\f004";
   font-size: 2rem;
-  position: absolute;
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
@@ -337,7 +360,7 @@ footer a {
   content: "";
   display: block;
   width: 95px;
-  border-bottom: 2px solid #99E2D0;
+  border-bottom: 3px solid #99E2D0;
 }
 #restaurantpage .resto-main h4, #restaurantpage .resto-main p, #restaurantpage .resto-main span {
   font-size: 1.5rem;
