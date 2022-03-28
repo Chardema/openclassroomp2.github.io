@@ -61,8 +61,9 @@
             }
         }
         .menus{ 
-            overflow: hidden;           
+            overflow: hidden;         
             .menu__category {
+
                 cursor: pointer;
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
@@ -71,13 +72,19 @@
                     grid-template-columns: 1fr;   
                 }
                 .menu-item {
+                    animation: appear 2s;
+                    @for $i from 1 through 3 {
+                        &:nth-child(#{$i}) {
+                           animation-delay: 150ms * $i;
+                        }
+                    }  
                     background-color: white;
                     display: flex;
                     @include mixins.base-shadow;
+                    animation-fill-mode: none;
                     border-radius: 1rem;
                     overflow: hidden;
                     margin: 1rem;
-                    animation: appear 3s;
                     .menu-item__price{
                         margin-left: auto;
                         font-weight: bold;

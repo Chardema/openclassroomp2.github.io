@@ -257,10 +257,12 @@ footer a {
 
 @keyframes appear {
   0% {
-    transform: scale(0);
+    transform: translateY(50%);
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    transform: translateY(0%);
+    opacity: 1;
   }
 }
 #restaurantpage {
@@ -388,13 +390,23 @@ footer a {
   }
 }
 #restaurantpage .menus .menu__category .menu-item {
+  animation: appear 2s;
   background-color: white;
   display: flex;
   box-shadow: 2px 1px 16px -3px #000000;
+  animation-fill-mode: none;
   border-radius: 1rem;
   overflow: hidden;
   margin: 1rem;
-  animation: appear 3s;
+}
+#restaurantpage .menus .menu__category .menu-item:nth-child(1) {
+  animation-delay: 150ms;
+}
+#restaurantpage .menus .menu__category .menu-item:nth-child(2) {
+  animation-delay: 300ms;
+}
+#restaurantpage .menus .menu__category .menu-item:nth-child(3) {
+  animation-delay: 450ms;
 }
 #restaurantpage .menus .menu__category .menu-item .menu-item__price {
   margin-left: auto;
