@@ -31,3 +31,18 @@
             font-size: 1rem;
         }
 }
+
+.loader {
+    display: grid;
+    place-items: center;
+    z-index: 99;
+    inset: 0;
+    background-color: #ffff;
+    height: 100vh;
+    position: fixed;
+    opacity: 0.9;
+    animation: disapear 200ms 5s forwards;
+    i{
+        animation: spin 3s infinite;
+    }
+}
