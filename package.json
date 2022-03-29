@@ -4,7 +4,8 @@
   "description": "rendu projet oc",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch style.scss style.css"
+    "sass": "sass --watch style.scss style.css",
+    "build": "postcss style.css -u autoprefixer cssnano -o ./build/style.min.css"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,8 @@
   },
   "homepage": "https://github.com/Chardema/openclassroomp2.github.io#readme",
   "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "cssnano": "^5.1.5",
     "postcss": "^8.4.12",
     "postcss-cli": "^9.1.0",
     "sass": "^1.49.9"
