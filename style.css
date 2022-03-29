@@ -11,6 +11,7 @@ body {
   margin: 0;
   height: auto;
   margin: auto;
+  background-color: #F6F6F6;
 }
 
 a {
@@ -29,11 +30,15 @@ h1, h2, h3, h4, h5, p {
   padding: 0;
 }
 
+#homepage h2 {
+  margin: 1rem 0;
+}
+
 header {
   font-family: "Shrikhand", cursive;
   text-align: center;
   background-color: white;
-  box-shadow: 0px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px rgba(0, 0, 0, 0.25);
   padding: 0.3rem;
   margin: 0;
   position: relative;
@@ -80,28 +85,29 @@ header {
   font-size: 1rem;
 }
 
-.loader {
-  display: grid;
-  place-items: center;
-  z-index: 99;
-  inset: 0;
-  background-color: #ffff;
-  height: 100vh;
-  position: fixed;
-  opacity: 0.9;
-  animation: disapear 200ms 9s forwards;
-}
-.loader::after {
-  content: "";
-  height: 100px;
-  width: 100px;
-  border-right: 5px solid transparent;
-  border-top: 5px solid #9356dc;
-  border-radius: 50%;
-  animation: spin 3s ease-in-out;
-  animation-iteration-count: 3;
-}
-
+/* .loader {
+    $animation-duration :3s;
+    $animation-count : 3;
+    display: grid;
+    place-items: center;
+    z-index: 99;
+    inset: 0;
+    background-color: #ffff;
+    height: 100vh;
+    position: fixed;
+    opacity: 0.9;
+    animation: disapear 200ms $animation-duration*$animation-count forwards;
+    &::after{
+        content: "";
+        height: 100px;
+        width: 100px;
+        border-right: 5px solid transparent;
+        border-top: 5px solid colors.$purple;
+        border-radius: 50%;
+        animation: spin $animation-duration ease-in-out;
+        animation-iteration-count: $animation-count;
+    }
+} */
 .whitelogo {
   filter: invert(100%) sepia(5%) saturate(0%) hue-rotate(96deg) brightness(100%) contrast(101%);
   padding: 10px;
@@ -141,7 +147,7 @@ footer a {
   position: relative;
   list-style-type: none;
   background-color: #f6f6f6;
-  padding: 1.5rem 2rem;
+  padding: 1.8rem 2rem;
   flex-grow: 1;
   border-radius: 1rem;
   box-shadow: 2px 1px 16px -3px #000000;
@@ -163,7 +169,8 @@ footer a {
   transform: translateY(-50%);
 }
 .fonctionnement li:hover {
-  transform: scale(1.02) none;
+  transform: scale(1.02);
+  background-color: #F5EDFF;
 }
 .fonctionnement i.fas {
   margin-right: 1rem;
@@ -204,6 +211,7 @@ footer a {
   height: 15rem;
   border-radius: 1rem 1rem 0 0;
   background-size: cover;
+  background-position: center;
 }
 #homepage .menus .card__image-1 {
   background-image: url(./assets/restaurants/food1.jpg);
@@ -273,7 +281,7 @@ footer a {
   padding-top: 1rem;
 }
 #homepage .menus .card__description h3, #homepage .menus .card__description p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding: 0.5rem;
 }
 
@@ -327,10 +335,10 @@ footer a {
 }
 #restaurantpage .miamimage {
   width: 100%;
-  max-height: 50vh;
+  max-height: 35vh;
   display: block;
   object-fit: cover;
-  object-position: bottom;
+  object-position: center;
 }
 #restaurantpage .resto__title {
   margin-top: -2rem;
@@ -443,6 +451,9 @@ footer a {
 #restaurantpage .menus .menu__category .menu-item:nth-child(3) {
   animation-delay: 450ms;
 }
+#restaurantpage .menus .menu__category .menu-item:nth-child(4) {
+  animation-delay: 600ms;
+}
 #restaurantpage .menus .menu__category .menu-item .menu-item__price {
   margin-left: auto;
   font-weight: bold;
@@ -473,8 +484,8 @@ footer a {
   display: grid;
   place-items: center;
   background-color: white;
-  aspect-ratio: 1;
-  width: 2rem;
+  height: 1rem;
+  width: 1rem;
   border-radius: 1rem;
   color: #99E2D0;
 }

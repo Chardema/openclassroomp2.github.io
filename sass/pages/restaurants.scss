@@ -26,10 +26,10 @@
 
         .miamimage {
             width: 100%;
-            max-height: 50vh;
+            max-height: 35vh;
             display: block;
             object-fit: cover;
-            object-position: bottom;
+            object-position: center;
         }
         .resto__title {
             margin-top: -2rem;
@@ -73,7 +73,7 @@
                 }
                 .menu-item {
                     animation: appear 2s;
-                    @for $i from 1 through 3 {
+                    @for $i from 1 through 4 {
                         &:nth-child(#{$i}) {
                            animation-delay: 150ms * $i;
                         }
@@ -112,11 +112,12 @@
                         place-items: center;
                         flex-shrink: 0;
                         i{
+                            $size: 1rem;
                             display: grid;
                             place-items: center;
                             background-color: white;
-                            aspect-ratio: 1;
-                            width: 2rem;
+                            height: $size;
+                            width: $size;
                             border-radius: 1rem;
                             color: colors.$newpanel;
                         }
