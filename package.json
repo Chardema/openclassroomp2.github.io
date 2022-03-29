@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/Chardema/openclassroomp2.github.io#readme",
   "devDependencies": {
+    "postcss": "^8.4.12",
+    "postcss-cli": "^9.1.0",
     "sass": "^1.49.9"
   }
 }
