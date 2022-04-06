@@ -467,7 +467,6 @@ footer a {
 }
 #restaurantpage .menus .menu__category .menu-item .menu-item__description h4, #restaurantpage .menus .menu__category .menu-item .menu-item__description p {
   overflow: hidden;
-  white-space: nowrap;
   text-overflow: ellipsis;
 }
 #restaurantpage .menus .menu__category .menu-item .menu-item__check {
